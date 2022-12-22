@@ -3,12 +3,7 @@ import autoImport from 'sveltekit-autoimport'
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [
-		autoImport({
-			components: ['./src/features']
-		}),
-		sveltekit()
-	]
+	plugins: [sveltekit()]
 }
 
 export default config

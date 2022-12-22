@@ -6,7 +6,7 @@ import path from 'path'
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: vitePreprocess(),
+	preprocess: [vitePreprocess()],
 
 	kit: {
 		adapter: adapter(),

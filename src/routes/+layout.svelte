@@ -1,5 +1,8 @@
 <script>
+	import { LayoutRoot } from '@/common'
 	import '../app.css'
 </script>
 
-<slot />
+<LayoutRoot>
+	<slot />
+</LayoutRoot>
