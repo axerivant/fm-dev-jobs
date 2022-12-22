@@ -4,9 +4,10 @@
 	import MoonSVG from '@/assets/desktop/icon-moon.svg'
 	// event dispatcher
 	import { createEventDispatcher } from 'svelte'
+	import Theme from '@/common/theme.store'
 	const dispatch = createEventDispatcher()
 
-	export let currentTheme: ThemeType
+	let currentTheme = $Theme
 	$: isToggled = currentTheme === 'dark'
 
 	const emmitToggle = () => {
